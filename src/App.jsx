@@ -23,19 +23,19 @@ function WeatherApp() {
   function getWeatherImage(weather) {
     switch (weather) {
       case "Clear":
-        return "src/assets/images/clear.png";
+        return "./clear.png";
       case "Rain":
-        return "src/assets/images/rain.png";
+        return "./rain.png";
       case "Snow":
-        return "src/assets/images/snow.png";
+        return "./snow.png";
       case "Clouds":
-        return "src/assets/images/cloud.png";
+        return "./cloud.png";
       case "Mist":
-        return "src/assets/images/mist.png";
+        return "./mist.png";
       case "Haze":
-        return "src/assets/images/haze.png";
+        return "./haze.png";
       default:
-        return "src/assets/images/cloud.png";
+        return "./cloud.png";
     }
   }
 
@@ -79,7 +79,7 @@ function WeatherApp() {
       {error ? (
         <div className={`not-found ${isVisible ? '' : 'visible'}`}>
           <div className="box">
-            <img src="src/assets/images/404.png" alt="404" />
+            <img src="./404.png" alt="404" />
             <p>Oops! Location not found!</p>
           </div>
         </div>
