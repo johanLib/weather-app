@@ -1,0 +1,28 @@
+.not-found {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 110px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+
+    img {
+        width: 65%;
+    }
+
+    p {
+        font-size: 22px;
+        font-weight: 500;
+        margin-top: 12px;
+    }
+  }
+  
+  .not-found.visible {
+    opacity: 1;
+  }
+  
+  .city-hide {
+    display: none;
+  }
